@@ -9,8 +9,8 @@
 
 
 ## 🎥 Demo Video
+[Watch the Demo](https://github.com/SriHarshitha88/GradientEditor-CrewAi/raw/main/demo/gradient.mp4)
 
-[![Demo Video](https://github.com/user-attachments/assets/14377b4d-b9b7-4182-bfd6-87deb228a6c5)](demo/demo.mp4)
 
 
 
