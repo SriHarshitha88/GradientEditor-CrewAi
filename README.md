@@ -7,9 +7,11 @@
 [![Streamlit](https://img.shields.io/badge/Streamlit-Demo-red.svg)](https://streamlit.io)
 [![FastAPI](https://img.shields.io/badge/FastAPI-Backend-teal.svg)](https://fastapi.tiangolo.com)
 
+
 ## 🎥 Demo Video
 
-[![Demo Video](demo/gradient.mp4)]
+[![Demo Video](https://github.com/user-attachments/assets/14377b4d-b9b7-4182-bfd6-87deb228a6c5)](demo/demo.mp4)
+
 
 
 ## 🏗️ How It Works
