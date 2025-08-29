@@ -9,7 +9,8 @@
 
 ## 🎥 Demo Video
 
-[![Demo Video](https://github.com/user-attachments/assets/837f2389-efed-449f-8573-bb899266d1e6)]
+[![Demo Video](https://github.com/user-attachments/assets/837f2389-efed-449f-8573-bb899266d1e6)](https://github.com/SriHarshitha88/GradientEditor-CrewAi/releases/download/v0.1.0/demo.mp4)
+
 
 ## 🏗️ How It Works
 
