@@ -1,0 +1,83 @@
+{
+  "gradient_patterns": {
+    "linear_gradients": [
+      {
+        "description": "horizontal red to blue",
+        "specification": {
+          "gradient_type": "linear",
+          "direction": "to right",
+          "colors": [
+            {"color": "#ff0000", "position": "0%"},
+            {"color": "#0000ff", "position": "100%"}
+          ]
+        }
+      },
+      {
+        "description": "vertical sunset gradient",
+        "specification": {
+          "gradient_type": "linear",
+          "direction": "to bottom",
+          "colors": [
+            {"color": "#ff6b35", "position": "0%"},
+            {"color": "#f7931e", "position": "50%"},
+            {"color": "#ffcd3c", "position": "100%"}
+          ]
+        }
+      },
+      {
+        "description": "diagonal ocean gradient",
+        "specification": {
+          "gradient_type": "linear",
+          "direction": "45deg",
+          "colors": [
+            {"color": "#667eea", "position": "0%"},
+            {"color": "#764ba2", "position": "100%"}
+          ]
+        }
+      }
+    ],
+    "radial_gradients": [
+      {
+        "description": "center white to edge black",
+        "specification": {
+          "gradient_type": "radial",
+          "direction": "center",
+          "colors": [
+            {"color": "#ffffff", "position": "0%"},
+            {"color": "#000000", "position": "100%"}
+          ]
+        }
+      },
+      {
+        "description": "rainbow burst from center",
+        "specification": {
+          "gradient_type": "radial",
+          "direction": "center",
+          "colors": [
+            {"color": "#ff0000", "position": "0%"},
+            {"color": "#ff8000", "position": "20%"},
+            {"color": "#ffff00", "position": "40%"},
+            {"color": "#00ff00", "position": "60%"},
+            {"color": "#0000ff", "position": "80%"},
+            {"color": "#8000ff", "position": "100%"}
+          ]
+        }
+      }
+    ]
+  },
+  "color_schemes": {
+    "warm": ["#ff6b6b", "#ee5a24", "#feca57", "#ff9ff3"],
+    "cool": ["#54a0ff", "#5f27cd", "#00d2d3", "#01a3a4"],
+    "nature": ["#2ed573", "#7bed9f", "#70a1ff", "#5352ed"],
+    "sunset": ["#ff6348", "#ff7675", "#fdcb6e", "#e17055"],
+    "ocean": ["#0984e3", "#74b9ff", "#00cec9", "#55efc4"]
+  },
+  "common_directions": {
+    "horizontal": "to right",
+    "vertical": "to bottom",
+    "diagonal_down": "45deg",
+    "diagonal_up": "135deg",
+    "reverse_horizontal": "to left",
+    "reverse_vertical": "to top"
+  }
+}

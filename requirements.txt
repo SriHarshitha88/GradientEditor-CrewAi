@@ -1,0 +1,11 @@
+crewai[tools]
+streamlit
+fastapi
+uvicorn
+python-dotenv
+pydantic
+lxml
+beautifulsoup4
+openai
+langchain
+langchain-openai

@@ -1,0 +1,57 @@
+parse_gradient_instruction:
+  description: >
+    Analyze the user's natural language instruction to extract gradient specifications.
+    Parse details like gradient type (linear/radial), direction, color stops, positions,
+    and any special effects or styling requirements.
+  expected_output: >
+    A structured JSON object containing:
+    - gradient_type: "linear" or "radial"
+    - direction: angle in degrees or keywords like "to right", "to bottom"
+    - colors: array of color objects with hex/rgb values and positions
+    - additional_properties: any special styling requirements
+    - target_elements: which SVG elements should receive the gradient
+  agent: gradient_parser_agent
+  tools:
+    - gradient_analysis_tool
+  output_json: GradientSpecification
+  output_file: outputs/gradient_specification.json
+
+generate_svg_gradient:
+  description: >
+    Create SVG gradient definitions and apply them to specified elements based on
+    the parsed gradient specification. Generate clean, valid SVG markup with
+    proper gradient definitions in the <defs> section.
+  expected_output: >
+    Complete SVG markup with:
+    - Proper gradient definitions in <defs> section
+    - Applied gradients to target elements
+    - Clean, valid SVG syntax
+    - Optimized for performance and compatibility
+  agent: svg_manipulator_agent
+  context:
+    - parse_gradient_instruction
+  tools:
+    - svg_manipulation_tool
+    - gradient_generator_tool
+  output_file: outputs/generated_svg.svg
+
+validate_svg_output:
+  description: >
+    Validate the generated SVG for correctness, accessibility, and visual quality.
+    Check for proper syntax, color contrast, accessibility features, and overall
+    design quality.
+  expected_output: >
+    A validation report containing:
+    - syntax_valid: boolean indicating SVG validity
+    - accessibility_score: rating from 1-10
+    - visual_quality_assessment: detailed analysis
+    - recommendations: list of improvements if needed
+    - final_approval: boolean indicating if output meets standards
+  agent: validation_agent
+  context:
+    - generate_svg_gradient
+  tools:
+    - svg_validator_tool
+    - accessibility_checker_tool
+  output_json: ValidationReport
+  output_file: outputs/validation_report.json

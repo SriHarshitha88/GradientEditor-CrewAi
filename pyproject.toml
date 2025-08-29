@@ -1,0 +1,32 @@
+[project]
+name = "gradient-editor-crewai"
+version = "0.1.0"
+description = "AI-driven system for generating SVG gradients using CrewAI"
+authors = [
+    { name = "Gradient Editor Team" }
+]
+dependencies = [
+    "crewai[tools]",
+    "streamlit",
+    "fastapi",
+    "uvicorn",
+    "python-dotenv",
+    "pydantic",
+    "lxml",
+    "beautifulsoup4",
+    "openai",
+    "langchain",
+    "langchain-openai",
+]
+requires-python = ">=3.9"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.uv]
+dev-dependencies = [
+    "pytest",
+    "black",
+    "flake8",
+]
