@@ -9,7 +9,7 @@
 
 ## 🎥 Demo Video
 
-[![Demo Video](https://github.com/user-attachments/assets/14377b4d-b9b7-4182-bfd6-87deb228a6c5)]
+[![Demo Video](demo/gradient.mp4)]
 
 
 ## 🏗️ How It Works
